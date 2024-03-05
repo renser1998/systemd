@@ -1,0 +1,319 @@
+Bringing machine 'server' up with 'virtualbox' provider...
+==> server: Importing base box 'centos'...
+[KProgress: 20%[KProgress: 30%[KProgress: 40%[KProgress: 50%[KProgress: 60%[KProgress: 70%[KProgress: 90%[K==> server: Matching MAC address for NAT networking...
+==> server: Setting the name of the VM: vagrant_server_1709659612202_81744
+==> server: Clearing any previously set network interfaces...
+==> server: Preparing network interfaces based on configuration...
+    server: Adapter 1: nat
+    server: Adapter 2: hostonly
+==> server: Forwarding ports...
+    server: 22 (guest) => 2222 (host) (adapter 1)
+==> server: Running 'pre-boot' VM customizations...
+==> server: Booting VM...
+==> server: Waiting for machine to boot. This may take a few minutes...
+    server: SSH address: 127.0.0.1:2222
+    server: SSH username: vagrant
+    server: SSH auth method: private key
+    server: 
+    server: Vagrant insecure key detected. Vagrant will automatically replace
+    server: this with a newly generated keypair for better security.
+    server: 
+    server: Inserting generated public key within guest...
+    server: Removing insecure key from the guest if it's present...
+    server: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> server: Machine booted and ready!
+==> server: Checking for guest additions in VM...
+    server: No guest additions were detected on the base box for this VM! Guest
+    server: additions are required for forwarded ports, shared folders, host only
+    server: networking, and more. If SSH fails on this machine, please install
+    server: the guest additions and repackage the box to continue.
+    server: 
+    server: This is not an error message; everything may continue to work properly,
+    server: in which case you may ignore this message.
+==> server: Setting hostname...
+==> server: Configuring and enabling network interfaces...
+==> server: Rsyncing folder: /home/user/Documents/vagrant/ => /vagrant
+==> server: Running provisioner: shell...
+    server: Running: /tmp/vagrant-shell20240305-16295-5vmi4z.sh
+    server: ++++++++++++++++++++++++++++++++++++++++++++++++++++++++TASK 1+++++++++++++++++++++++++++++++++++++++++++++++++++
+    server: =================config
+    server: =================script
+    server: =================Unit
+    server: =================Set timer
+==> server: Running provisioner: shell...
+    server: Running: /tmp/vagrant-shell20240305-16295-vo81t9.sh
+    server: ++++++++++++++++++++++++++++++++++++++++++++++++++++++++TASK 2+++++++++++++++++++++++++++++++++++++++++++++++++++
+    server: CentOS Linux 8 - AppStream                      9.3 MB/s | 8.4 MB     00:00
+    server: CentOS Linux 8 - BaseOS                         6.8 MB/s | 4.6 MB     00:00
+    server: CentOS Linux 8 - Extras                          25 kB/s |  10 kB     00:00
+    server: Dependencies resolved.
+    server: ================================================================================
+    server:  Package             Architecture   Version                Repository      Size
+    server: ================================================================================
+    server: Upgrading:
+    server:  libmodulemd         x86_64         2.13.0-1.el8           baseos         233 k
+    server: 
+    server: Transaction Summary
+    server: ================================================================================
+    server: Upgrade  1 Package
+    server: 
+    server: Total download size: 233 k
+    server: Downloading Packages:
+    server: libmodulemd-2.13.0-1.el8.x86_64.rpm             921 kB/s | 233 kB     00:00
+    server: --------------------------------------------------------------------------------
+    server: Total                                           895 kB/s | 233 kB     00:00
+    server: warning: /var/cache/dnf/baseos-398269605bdca3dc/packages/libmodulemd-2.13.0-1.el8.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID 8483c65d: NOKEY
+    server: CentOS Linux 8 - BaseOS                         362 kB/s | 1.6 kB     00:00
+    server: Importing GPG key 0x8483C65D:
+    server:  Userid     : "CentOS (CentOS Official Signing Key) <security@centos.org>"
+    server:  Fingerprint: 99DB 70FA E1D7 CE22 7FB6 4882 05B5 55B3 8483 C65D
+    server:  From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial
+    server: Key imported successfully
+    server: Running transaction check
+    server: Transaction check succeeded.
+    server: Running transaction test
+    server: Transaction test succeeded.
+    server: Running transaction
+    server:   Preparing        :                                                        1/1
+    server:   Upgrading        : libmodulemd-2.13.0-1.el8.x86_64                        1/2
+    server:   Cleanup          : libmodulemd-2.9.4-2.el8.x86_64                         2/2
+    server:   Running scriptlet: libmodulemd-2.9.4-2.el8.x86_64                         2/2
+    server:   Verifying        : libmodulemd-2.13.0-1.el8.x86_64                        1/2
+    server:   Verifying        : libmodulemd-2.9.4-2.el8.x86_64                         2/2
+    server: 
+    server: Upgraded:
+    server:   libmodulemd-2.13.0-1.el8.x86_64
+    server: 
+    server: Complete!
+    server: =================install epel-release and spawn-fcgi
+    server: Last metadata expiration check: 0:00:04 ago on Tue 05 Mar 2024 05:28:48 PM UTC.
+    server: Dependencies resolved.
+    server: ================================================================================
+    server:  Package               Architecture    Version            Repository       Size
+    server: ================================================================================
+    server: Installing:
+    server:  epel-release          noarch          8-11.el8           extras           24 k
+    server: 
+    server: Transaction Summary
+    server: ================================================================================
+    server: Install  1 Package
+    server: 
+    server: Total download size: 24 k
+    server: Installed size: 35 k
+    server: Downloading Packages:
+    server: epel-release-8-11.el8.noarch.rpm                151 kB/s |  24 kB     00:00
+    server: --------------------------------------------------------------------------------
+    server: Total                                           148 kB/s |  24 kB     00:00
+    server: Running transaction check
+    server: Transaction check succeeded.
+    server: Running transaction test
+    server: Transaction test succeeded.
+    server: Running transaction
+    server:   Preparing        :                                                        1/1
+    server:   Installing       : epel-release-8-11.el8.noarch                           1/1
+    server:   Running scriptlet: epel-release-8-11.el8.noarch                           1/1
+    server:   Verifying        : epel-release-8-11.el8.noarch                           1/1
+    server: 
+    server: Installed:
+    server:   epel-release-8-11.el8.noarch
+    server: 
+    server: Complete!
+    server: Extra Packages for Enterprise Linux Modular 8 - 1.3 MB/s | 733 kB     00:00
+    server: Extra Packages for Enterprise Linux 8 - x86_64  6.1 MB/s |  16 MB     00:02
+    server: Dependencies resolved.
+    server: ================================================================================
+    server:  Package          Arch   Version                                Repo       Size
+    server: ================================================================================
+    server: Installing:
+    server:  httpd            x86_64 2.4.37-43.module_el8.5.0+1022+b541f3b1 appstream 1.4 M
+    server:  mod_fcgid        x86_64 2.3.9-17.el8                           appstream  86 k
+    server:  php              x86_64 7.2.24-1.module_el8.2.0+313+b04d0a66   appstream 1.5 M
+    server:  php-cli          x86_64 7.2.24-1.module_el8.2.0+313+b04d0a66   appstream 3.1 M
+    server:  spawn-fcgi       x86_64 1.6.3-17.el8                           epel       24 k
+    server: Installing dependencies:
+    server:  apr              x86_64 1.6.3-12.el8                           appstream 129 k
+    server:  apr-util         x86_64 1.6.1-6.el8                            appstream 105 k
+    server:  centos-logos-httpd
+    server:                   noarch 85.8-2.el8                             baseos     75 k
+    server:  httpd-filesystem noarch 2.4.37-43.module_el8.5.0+1022+b541f3b1 appstream  39 k
+    server:  httpd-tools      x86_64 2.4.37-43.module_el8.5.0+1022+b541f3b1 appstream 107 k
+    server:  mailcap          noarch 2.1.48-3.el8                           baseos     39 k
+    server:  mod_http2        x86_64 1.15.7-3.module_el8.4.0+778+c970deab   appstream 154 k
+    server:  nginx-filesystem noarch 1:1.14.1-9.module_el8.0.0+184+e34fea82 appstream  24 k
+    server:  php-common       x86_64 7.2.24-1.module_el8.2.0+313+b04d0a66   appstream 661 k
+    server: Installing weak dependencies:
+    server:  apr-util-bdb     x86_64 1.6.1-6.el8                            appstream  25 k
+    server:  apr-util-openssl x86_64 1.6.1-6.el8                            appstream  27 k
+    server:  php-fpm          x86_64 7.2.24-1.module_el8.2.0+313+b04d0a66   appstream 1.6 M
+    server: Enabling module streams:
+    server:  httpd                   2.4
+    server:  nginx                   1.14
+    server:  php                     7.2
+    server: 
+    server: Transaction Summary
+    server: ================================================================================
+    server: Install  17 Packages
+    server: 
+    server: Total download size: 9.1 M
+    server: Installed size: 31 M
+    server: Downloading Packages:
+    server: (1/17): apr-util-bdb-1.6.1-6.el8.x86_64.rpm     127 kB/s |  25 kB     00:00
+    server: (2/17): apr-1.6.3-12.el8.x86_64.rpm             631 kB/s | 129 kB     00:00
+    server: (3/17): apr-util-1.6.1-6.el8.x86_64.rpm         494 kB/s | 105 kB     00:00
+    server: (4/17): apr-util-openssl-1.6.1-6.el8.x86_64.rpm 385 kB/s |  27 kB     00:00
+    server: (5/17): httpd-filesystem-2.4.37-43.module_el8.5 478 kB/s |  39 kB     00:00
+    server: (6/17): httpd-tools-2.4.37-43.module_el8.5.0+10 1.1 MB/s | 107 kB     00:00
+    server: (7/17): mod_fcgid-2.3.9-17.el8.x86_64.rpm       1.1 MB/s |  86 kB     00:00
+    server: (8/17): httpd-2.4.37-43.module_el8.5.0+1022+b54 7.1 MB/s | 1.4 MB     00:00
+    server: (9/17): nginx-filesystem-1.14.1-9.module_el8.0. 356 kB/s |  24 kB     00:00
+    server: (10/17): mod_http2-1.15.7-3.module_el8.4.0+778+ 1.6 MB/s | 154 kB     00:00
+    server: (11/17): php-7.2.24-1.module_el8.2.0+313+b04d0a 5.9 MB/s | 1.5 MB     00:00
+    server: (12/17): php-common-7.2.24-1.module_el8.2.0+313 2.8 MB/s | 661 kB     00:00
+    server: (13/17): centos-logos-httpd-85.8-2.el8.noarch.r 678 kB/s |  75 kB     00:00
+    server: (14/17): php-cli-7.2.24-1.module_el8.2.0+313+b0 8.0 MB/s | 3.1 MB     00:00
+    server: (15/17): php-fpm-7.2.24-1.module_el8.2.0+313+b0 8.6 MB/s | 1.6 MB     00:00
+    server: (16/17): mailcap-2.1.48-3.el8.noarch.rpm        548 kB/s |  39 kB     00:00
+    server: (17/17): spawn-fcgi-1.6.3-17.el8.x86_64.rpm     350 kB/s |  24 kB     00:00
+    server: --------------------------------------------------------------------------------
+    server: Total                                           7.9 MB/s | 9.1 MB     00:01
+    server: warning: /var/cache/dnf/epel-6c12381928511f32/packages/spawn-fcgi-1.6.3-17.el8.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID 2f86d6a1: NOKEY
+    server: Extra Packages for Enterprise Linux 8 - x86_64  1.6 MB/s | 1.6 kB     00:00
+    server: Importing GPG key 0x2F86D6A1:
+    server:  Userid     : "Fedora EPEL (8) <epel@fedoraproject.org>"
+    server:  Fingerprint: 94E2 79EB 8D8F 25B2 1810 ADF1 21EA 45AB 2F86 D6A1
+    server:  From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-8
+    server: Key imported successfully
+    server: Running transaction check
+    server: Transaction check succeeded.
+    server: Running transaction test
+    server: Transaction test succeeded.
+    server: Running transaction
+    server:   Preparing        :                                                        1/1
+    server:   Installing       : php-common-7.2.24-1.module_el8.2.0+313+b04d0a66.x8    1/17
+    server:   Running scriptlet: httpd-filesystem-2.4.37-43.module_el8.5.0+1022+b54    2/17
+    server:   Installing       : httpd-filesystem-2.4.37-43.module_el8.5.0+1022+b54    2/17
+    server:   Installing       : apr-1.6.3-12.el8.x86_64                               3/17
+    server:   Running scriptlet: apr-1.6.3-12.el8.x86_64                               3/17
+    server:   Installing       : apr-util-bdb-1.6.1-6.el8.x86_64                       4/17
+    server:   Installing       : apr-util-openssl-1.6.1-6.el8.x86_64                   5/17
+    server:   Installing       : apr-util-1.6.1-6.el8.x86_64                           6/17
+    server:   Running scriptlet: apr-util-1.6.1-6.el8.x86_64                           6/17
+    server:   Installing       : httpd-tools-2.4.37-43.module_el8.5.0+1022+b541f3b1    7/17
+    server:   Installing       : php-cli-7.2.24-1.module_el8.2.0+313+b04d0a66.x86_6    8/17
+    server:   Installing       : mailcap-2.1.48-3.el8.noarch                           9/17
+    server:   Installing       : centos-logos-httpd-85.8-2.el8.noarch                 10/17
+    server:   Installing       : mod_http2-1.15.7-3.module_el8.4.0+778+c970deab.x86   11/17
+    server:   Installing       : httpd-2.4.37-43.module_el8.5.0+1022+b541f3b1.x86_6   12/17
+    server:   Running scriptlet: httpd-2.4.37-43.module_el8.5.0+1022+b541f3b1.x86_6   12/17
+    server:   Running scriptlet: nginx-filesystem-1:1.14.1-9.module_el8.0.0+184+e34   13/17
+    server:   Installing       : nginx-filesystem-1:1.14.1-9.module_el8.0.0+184+e34   13/17
+    server:   Installing       : php-fpm-7.2.24-1.module_el8.2.0+313+b04d0a66.x86_6   14/17
+    server:   Running scriptlet: php-fpm-7.2.24-1.module_el8.2.0+313+b04d0a66.x86_6   14/17
+    server:   Installing       : php-7.2.24-1.module_el8.2.0+313+b04d0a66.x86_64      15/17
+    server:   Installing       : mod_fcgid-2.3.9-17.el8.x86_64                        16/17
+    server:   Installing       : spawn-fcgi-1.6.3-17.el8.x86_64                       17/17
+    server:   Running scriptlet: spawn-fcgi-1.6.3-17.el8.x86_64                       17/17
+    server:   Running scriptlet: httpd-2.4.37-43.module_el8.5.0+1022+b541f3b1.x86_6   17/17
+    server:   Running scriptlet: spawn-fcgi-1.6.3-17.el8.x86_64                       17/17
+    server:   Running scriptlet: php-fpm-7.2.24-1.module_el8.2.0+313+b04d0a66.x86_6   17/17
+    server:   Verifying        : apr-1.6.3-12.el8.x86_64                               1/17
+    server:   Verifying        : apr-util-1.6.1-6.el8.x86_64                           2/17
+    server:   Verifying        : apr-util-bdb-1.6.1-6.el8.x86_64                       3/17
+    server:   Verifying        : apr-util-openssl-1.6.1-6.el8.x86_64                   4/17
+    server:   Verifying        : httpd-2.4.37-43.module_el8.5.0+1022+b541f3b1.x86_6    5/17
+    server:   Verifying        : httpd-filesystem-2.4.37-43.module_el8.5.0+1022+b54    6/17
+    server:   Verifying        : httpd-tools-2.4.37-43.module_el8.5.0+1022+b541f3b1    7/17
+    server:   Verifying        : mod_fcgid-2.3.9-17.el8.x86_64                         8/17
+    server:   Verifying        : mod_http2-1.15.7-3.module_el8.4.0+778+c970deab.x86    9/17
+    server:   Verifying        : nginx-filesystem-1:1.14.1-9.module_el8.0.0+184+e34   10/17
+    server:   Verifying        : php-7.2.24-1.module_el8.2.0+313+b04d0a66.x86_64      11/17
+    server:   Verifying        : php-cli-7.2.24-1.module_el8.2.0+313+b04d0a66.x86_6   12/17
+    server:   Verifying        : php-common-7.2.24-1.module_el8.2.0+313+b04d0a66.x8   13/17
+    server:   Verifying        : php-fpm-7.2.24-1.module_el8.2.0+313+b04d0a66.x86_6   14/17
+    server:   Verifying        : centos-logos-httpd-85.8-2.el8.noarch                 15/17
+    server:   Verifying        : mailcap-2.1.48-3.el8.noarch                          16/17
+    server:   Verifying        : spawn-fcgi-1.6.3-17.el8.x86_64                       17/17
+    server: 
+    server: Installed:
+    server:   apr-1.6.3-12.el8.x86_64
+    server:   apr-util-1.6.1-6.el8.x86_64
+    server:   apr-util-bdb-1.6.1-6.el8.x86_64
+    server:   apr-util-openssl-1.6.1-6.el8.x86_64
+    server:   centos-logos-httpd-85.8-2.el8.noarch
+    server:   httpd-2.4.37-43.module_el8.5.0+1022+b541f3b1.x86_64
+    server:   httpd-filesystem-2.4.37-43.module_el8.5.0+1022+b541f3b1.noarch
+    server:   httpd-tools-2.4.37-43.module_el8.5.0+1022+b541f3b1.x86_64
+    server:   mailcap-2.1.48-3.el8.noarch
+    server:   mod_fcgid-2.3.9-17.el8.x86_64
+    server:   mod_http2-1.15.7-3.module_el8.4.0+778+c970deab.x86_64
+    server:   nginx-filesystem-1:1.14.1-9.module_el8.0.0+184+e34fea82.noarch
+    server:   php-7.2.24-1.module_el8.2.0+313+b04d0a66.x86_64
+    server:   php-cli-7.2.24-1.module_el8.2.0+313+b04d0a66.x86_64
+    server:   php-common-7.2.24-1.module_el8.2.0+313+b04d0a66.x86_64
+    server:   php-fpm-7.2.24-1.module_el8.2.0+313+b04d0a66.x86_64
+    server:   spawn-fcgi-1.6.3-17.el8.x86_64
+    server: 
+    server: Complete!
+    server: =================unit service
+    server: =================Reload service
+    server: ● spawn-fcgi.service - Spawn-fcgi
+    server:    Loaded: loaded (/etc/systemd/system/spawn-fcgi.service; disabled; vendor preset: disabled)
+    server:    Active: active (running) since Tue 2024-03-05 17:29:17 UTC; 49ms ago
+    server:  Main PID: 24156 (php-cgi)
+    server:     Tasks: 33 (limit: 24916)
+    server:    Memory: 18.2M
+    server:    CGroup: /system.slice/spawn-fcgi.service
+    server:            ├─24156 /usr/bin/php-cgi
+    server:            ├─24159 /usr/bin/php-cgi
+    server:            ├─24160 /usr/bin/php-cgi
+    server:            ├─24161 /usr/bin/php-cgi
+    server:            ├─24162 /usr/bin/php-cgi
+    server:            ├─24163 /usr/bin/php-cgi
+    server:            ├─24164 /usr/bin/php-cgi
+    server:            ├─24165 /usr/bin/php-cgi
+    server:            ├─24166 /usr/bin/php-cgi
+    server:            ├─24167 /usr/bin/php-cgi
+    server:            ├─24168 /usr/bin/php-cgi
+    server:            ├─24169 /usr/bin/php-cgi
+    server:            ├─24170 /usr/bin/php-cgi
+    server:            ├─24171 /usr/bin/php-cgi
+    server:            ├─24172 /usr/bin/php-cgi
+    server:            ├─24173 /usr/bin/php-cgi
+    server:            ├─24174 /usr/bin/php-cgi
+    server:            ├─24175 /usr/bin/php-cgi
+    server:            ├─24176 /usr/bin/php-cgi
+    server:            ├─24177 /usr/bin/php-cgi
+    server:            ├─24178 /usr/bin/php-cgi
+    server:            ├─24179 /usr/bin/php-cgi
+    server:            ├─24181 /usr/bin/php-cgi
+    server:            ├─24182 /usr/bin/php-cgi
+    server:            ├─24183 /usr/bin/php-cgi
+    server:            ├─24184 /usr/bin/php-cgi
+    server:            ├─24185 /usr/bin/php-cgi
+    server:            ├─24186 /usr/bin/php-cgi
+    server:            ├─24187 /usr/bin/php-cgi
+    server:            ├─24188 /usr/bin/php-cgi
+    server:            ├─24189 /usr/bin/php-cgi
+    server:            ├─24190 /usr/bin/php-cgi
+    server:            └─24191 /usr/bin/php-cgi
+    server: 
+    server: Mar 05 17:29:17 server systemd[1]: Started Spawn-fcgi.
+==> server: Running provisioner: shell...
+    server: Running: /tmp/vagrant-shell20240305-16295-c1x0yj.sh
+    server: ++++++++++++++++++++++++++++++++++++++++++++++++++++++++TASK 3+++++++++++++++++++++++++++++++++++++++++++++++++++
+    server: CentOS Linux 8 - AppStream                       26 kB/s | 4.3 kB     00:00
+    server: CentOS Linux 8 - BaseOS                          24 kB/s | 3.9 kB     00:00
+    server: CentOS Linux 8 - Extras                         9.2 kB/s | 1.5 kB     00:00
+    server: Dependencies resolved.
+    server: Nothing to do.
+    server: Complete!
+    server: =================install httpd
+    server: Last metadata expiration check: 0:00:02 ago on Tue 05 Mar 2024 05:29:20 PM UTC.
+    server: Package httpd-2.4.37-43.module_el8.5.0+1022+b541f3b1.x86_64 is already installed.
+    server: Dependencies resolved.
+    server: Nothing to do.
+    server: Complete!
+    server: =================httpd instances
+    server: tcp   LISTEN 0      128                *:8081            *:*    users:(("httpd",pid=24417,fd=4),("httpd",pid=24416,fd=4),("httpd",pid=24415,fd=4),("httpd",pid=24414,fd=4),("httpd",pid=24410,fd=4)) ino:57981 sk:8 v6only:0 <->
+    server: tcp   LISTEN 0      128                *:8082            *:*    users:(("httpd",pid=24636,fd=4),("httpd",pid=24635,fd=4),("httpd",pid=24634,fd=4),("httpd",pid=24632,fd=4),("httpd",pid=24412,fd=4)) ino:58095 sk:9 v6only:0 <->
+    server: =================success
